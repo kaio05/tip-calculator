@@ -1,0 +1,140 @@
+html {
+    height: 100vh;
+    font-size: 10px;
+    color: #111F1A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9bf5d7;
+}
+
+main {
+    width: 80vw;
+    background: linear-gradient(-30deg, #39b19d, #54e0b2);
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    border-radius: 4rem;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.201);
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+section {
+    background: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.204);
+}
+
+section > div {
+    padding: 1.6rem 0;
+}
+
+.bill {
+    display: flex;
+}
+
+.bill label {
+    flex: 1;
+    align-self: center;
+}
+
+.bill input {
+    flex: 3;
+}
+
+input[type="number"] {
+    font-family: inherit;
+    background: #e7f0ee;
+    font-size: 1.6rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.201);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #e7f0ee;
+    margin-top: 1.2rem;
+    border-radius: 0.3rem;
+    outline-color: #39b19d;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #39b19d;
+    cursor: pointer;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+.show-tip {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 700px;
+        height: 520px;
+    }
+
+    .inputs {
+        background: #fff;
+        box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.201);
+        border-radius: 1rem;
+    }
+
+    section {
+        width: 300px;
+        margin-bottom: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .show-tip {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .show-tip .n {
+        font-size: 2.5em;
+    }
+}
