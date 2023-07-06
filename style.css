@@ -12,7 +12,7 @@ html {
 
 main {
     width: 80vw;
-    background: linear-gradient(-30deg, #39b19d, #54e0b2);
+    background: linear-gradient(-30deg, #39b19d, #5cdcb1, #5cdc93);
     padding: 3rem 1.6rem 6rem 1.6rem;
     border-radius: 4rem;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.201);
